@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Portfolio</title>
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+
+   <header class="animated">
+      <a href="#" class="logo"><span>CAS.</span></a>
+      <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+   </div>
+      <nav class="navbar">
+         <a href="#" class="active">Home</a>
+         <a href="#">About</a>
+         <a href="#">Services</a>
+         <a href="#">Projects</a>
+         <a href="#">Contacts</a>
+      </nav>
+   </header>
+
+
+   <section class="home animated">
+      <div class="home-detail">
+         <h4>Hello, I am</h4>
+         <h1>Casey Marie Lois Barrido</h1>
+         <h2>UI/UX Design | Front-End Developer</h2>
+         <p>I focus on intuitive, user-centered and clean front-end experiences.
+         I enjoy turning complex problems into simple, accessible interfaces that
+         feels natural to use.</p>
+
+         <div class="download-social">
+            <a href="#" class="button">Download CV</a>
+            <div class="social-icons">
+               <a href="#"><i class="ri-github-fill"></i></a>
+               <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+               <a href="#"><i class="ri-mail-fill"></i></a>
+            </div>
+         </div>
+      </div>
+
+      <div class="home-img">
+         <div class="img-box">
+            <img src="frmlphotot.png" alt="Casey Marie Lois">
+         </div>
+      </div>
+   </section>
+
+ 
+   <section class="about animated">
+      <div class="about-content">
+         <h2>About <span>Me</span></h2>
+         <p>I'm an IT student of Western Institute of Technology specializing in
+            UI/UX design and front-end development. I enjoy learning how people interact
+            with digital products and applying that understanding to create interfaces
+            that are both beautiful and practical.</p>
+      </div>
+      <div class="about-img">
+         <div class="img-glass">
+            <img src="frmlphotot.png" alt="Casey Marie Lois">
+         </div>
+      </div>
+   </section>
+
+
+   <section class="services animated">
+      <div class="service-detail">
+         <h2>My Services</h2>
+         <div class="grid">
+            <div class="card">
+               <span class="icon"><i class="ri-pen-nib-line"></i></span>
+               <h3>UI/UX Design</h3>
+               <p>Crafting intuitive wireframes, interactive prototypes, and pixel-perfect
+                   designs that reduce user drop-off and drive conversions.</p>
+            </div>
+            <div class="card">
+               <span class="icon"><i class="ri-code-s-slash-line"></i></span>
+               <h3>Web Development</h3>
+               <p>Transforming polished designs into fast, responsive websites built with
+                   modern frameworks and clean, maintainable code.</p>
+            </div>
+            <div class="card">
+               <span class="icon"><i class="ri-smartphone-line"></i></span>
+               <h3>App Design</h3>
+               <p>Turning designs into responsive, high-performance websites using modern frameworks.</p>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+   <section class="project animated">
+      <div class="project-content">
+         <h2>Latest Projects</h2>
+         <div class="grid">
+            <div class="project-item" style="background-image: url('awesmetodos.png');">
+               <div class="overlay">
+                  <h3>AwesomeTodos</h3>
+                  <p>Todos built using MERN</p>
+               </div>
+            </div>
+            <div class="project-item" style="background-image: url('doclock.png');">
+               <div class="overlay">
+                  <h3>Doclock</h3>
+                  <p>Fast to press, No more stress!</p>
+               </div>
+            </div>
+            <div class="project-item" style="background-image: url('addtocart.png');">
+               <div class="overlay">
+                  <h3>Product</h3>
+                  <p>Product design</p>
+               </div>
+            </div>
+                        <div class="project-item" style="background-image: url('playlist.png');">
+               <div class="overlay">
+                  <h3>Playlist</h3>
+                  <p>Currently playing</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+   <section class="contacts animated">
+      <div class="contact">
+         <h2>Get In Touch</h2>
+         <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5"></textarea>
+            <button type="submit" class="btn">Send Message</button>
+         </form>
+      </div>
+   </section>
+
+
+   <footer class="footer">
+      <p class="footer__text">© 2026 Casey Marie Lois | UI/UX Designer | Front-End Developer</p>
+   </footer>
+
+</div>
+
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const navbar = document.querySelector('.navbar');
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('open');
+    navbar.classList.toggle('open');
+  });
+
+  navbar.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      toggle.classList.remove('open');
+      navbar.classList.remove('open');
+    });
+  });
+</script>
+
+</body>
+</html>
